@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejercicio 14</title>
+	<style>
+	body {
+			background-color: lightblue;
+	}
+	div.formulario{
+		background-color: pink;
+		height: 1px
+		padding: 250px;
+		margin-top: 50px;
+		margin-left: 400px;
+		margin-right: 400px;
+	}
+	p.titulo {
+		color: blue;
+		font-size: 30px;
+		text-decoration: underline;
+		font-weight: bold;
+		font-style: italic;
+		text-shadow: 1px 2px violet;
+	}
+	p.info {
+		font-size: 20px;
+		font-weight: bold;
+		color: violet;
+
+	}
+	input {
+  		width: 30%;
+  		padding: 12px 20px;
+  		margin: 8px 0;
+  		box-sizing: border-box;
+  		border: 2px solid violet;
+  		border-radius: 10px;
+	}
+		select {
+  		width: 30%;
+  		padding: 12px 20px;
+  		margin: 8px 0;
+  		box-sizing: border-box;
+  		border: 2px solid violet;
+  		border-radius: 10px;
+	}
+	input[type=button]{
+  background-color: violet;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+	</style>
+</head>
+<body>
+	<div class="formulario">
+	<form align="center">
+		<p class="titulo">
+			Formulario de
+		</p>
+		<p class="titulo">
+			Registro
+		</p>
+		<p class="info"> Nombre </p>
+		<input type="text" name="Nombre">
+		<p class="info"> Apellido </p>
+		<input type="text" name="Apellido">
+		<p class="info"> Contraseña </p>
+		<input type="password" name="Apellido">
+		<p class="info"> Sexo </p>
+		<select>
+			<option> Masculino</option>
+			<option> Femenino</option>
+		</select>
+		<p class="info"> Tarjeta/s de Debito/Credito </p>
+		<select multiple>
+			<option> VISA</option>
+			<option> MasterCard</option>
+			<option> Cabal</option>
+		</select>
+		<p class="info"> Ultimo titulo obtenido </p>
+		<select>
+		<optgroup label="Secundario">
+			<option> Tecnico</option>
+			<option> Medio</option>
+		<optgroup label="Universitario">
+			<option> Ingenieria</option>
+			<option> Profesorado</option>
+			<option> Licenciatura</option>
+		</select>
+		<fieldset>
+			<legend><p class="info">Familia(? (Me quedé sin imaginación) </p></legend>
+				<p class="info"> Cantidad de hijos</p>
+				<input type="text">
+				<p class="info"> Estado civil</p>
+				  	<p class="info"><label>Casado</label>
+  					<input type="radio"></p>
+				  	<p class="info"><label>Soltero</label>
+  					<input type="radio"></p>
+		</fieldset>
+		<p class="info"> Observaciones</p>
+		<input type="textarea">
+		<br>
+		<a href="ejercicio 1.html">
+		<input type="button" value="Enviar">
+		</a>
+	</form>
+	</div>
+</body>
+</html>
