@@ -1,0 +1,177 @@
+<html>
+<head>
+<title>Devlog - PAC-MAN 99</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta charset="UTF-8"> 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<style>
+body { margin:0; }
+
+.wrapper {
+  overflow: hidden;
+}
+
+.sliding-background {
+  background: url("paclads.png") repeat-x;
+  height: 64px;
+  width: 5076px;
+  animation: slide 60s linear infinite;
+}
+
+@keyframes slide{
+  0%{
+    transform: translate3d(0, 0, 0);
+  }
+  100%{
+    transform: translate3d(-1692px, 0, 0);
+  }
+}
+
+/* Estilo del header */
+
+.masthead {
+  margin-bottom: 2rem;
+}
+
+.masthead-brand {
+  margin-bottom: 0;
+}
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, .5);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
+}
+
+
+</style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <ul class="nav navbar-nav mx-auto">
+    <a class="navbar-brand" href="#"><img src="../pacman-png-25194.png" width="30" height="30" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="../">Inicio</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Devlog <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../soundtrack">Soundtrack</a>
+        </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Redes sociales
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="https://twitter.com/pacman99game">Twitter</a>
+          <a class="dropdown-item" href="https://instagram.com/pacman99game">Instagram</a>
+          <a class="dropdown-item" href="https://gfycat.com/@pacman99">Gfycat</a>
+        </div>
+      </li>
+      </ul>
+    </ul>
+    </div>
+  </nav>
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Devlog</h1>
+      <p class="lead">Echa un vistazo a las nuevas <i>features</i> que se encuentran en el juego antes que nadie.</p>
+      <a href="http://twitter.com/pacman99game"><button type="button" class="btn btn-outline-primary btn-lg">Twitter</button></a>
+      <a href="https://gfycat.com/@pacman99"><button type="button" class="btn btn-outline-info btn-lg">Gfycat</button></a>
+      <a href="http://blog.erikbianco.me"><button type="button" class="btn btn-outline-dark btn-lg">Erik's Blog</button></a>
+    </div>
+  </div>
+
+<center>
+  <div class="card mb-3" style="max-width: 970px;">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <video width="320" height="180" autoplay loop muted>
+          <source src="https://giant.gfycat.com/LittleBlushingAmethystsunbird.webm" type="video/webm">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Nueva Selección de Personajes</h5>
+          <p class="card-text">Ahora va a ser más intuitivo elegir cuanta gente va a jugar con el nuevo Lobby de VS. Local, incluyendo una area para testear los controles, presionar los botones de cada personaje individualmente, y que todos los jugadores confirmen para empezar la partida.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card mb-3" style="max-width: 970px;">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <video width="320" height="180" autoplay loop muted>
+          <source src="https://giant.gfycat.com/EarnestDefiantEelelephant.webm" type="video/webm">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">¡4:3 a 16:9!</h5>
+          <p class="card-text">No es mucho en términos de gameplay, pero ahora el juego en vez de tener los bordes negros en partidas 2P y 3P, está a resolución 1280x720 (antes era 640x480), 16:9 widescreen, y las pantallas se adaptan para cubrir la enteridad de la ventana en todos los modos de juego.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card mb-3" style="max-width: 970px;">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <video width="320" height="240" autoplay loop muted>
+          <source src="https://giant.gfycat.com/AdventurousIcyBoaconstrictor.webm" type="video/webm">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Corre de la Tormenta</h5>
+          <p class="card-text">Estuve implementando una mecánica para que el mapa se vaya cerrando a medida que la partida transcurre. Voy a tener que encontrar una forma de hacerlo transparente, pero acá hay un GIF para demostrar el concepto básico.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</center>
+
+</body>
+</html>
